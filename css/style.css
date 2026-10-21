@@ -176,6 +176,9 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   width: 1px; height: 44px; background: linear-gradient(var(--amber), transparent);
   display: block; animation: scrollPulse 2s ease-in-out infinite;
 }
+/* letter-spacing trails after the last glyph; remove it so the glyphs
+   center exactly on the line below (issue #1) */
+.hero-scroll span { margin-right: -0.3em; }
 @keyframes scrollPulse { 0%, 100% { opacity: 0.3; transform: scaleY(0.6); } 50% { opacity: 1; transform: scaleY(1); } }
 
 /* ---------- Buttons ---------- */
@@ -289,7 +292,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 }
 .play-btn:hover { transform: scale(1.08); box-shadow: 0 0 0 18px rgba(255,180,84,0); }
 .play-btn svg { width: 34px; height: 34px; margin-left: 4px; }
-.showreel-note { font-size: 0.8rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); }
+.showreel-note { font-size: 0.8rem; letter-spacing: 0.2em; text-indent: 0.2em; text-transform: uppercase; color: var(--muted); }
 
 /* ---------- Services ---------- */
 .services {
@@ -401,7 +404,7 @@ a.contact-card:hover { border-color: var(--amber); transform: translateX(6px); }
 .footer-word {
   font-family: var(--serif); font-weight: 700;
   font-size: clamp(4rem, 16vw, 14rem); line-height: 1;
-  text-align: center; letter-spacing: 0.12em;
+  text-align: center; letter-spacing: 0.12em; text-indent: 0.12em;
   color: transparent; -webkit-text-stroke: 1px rgba(255,255,255,0.13);
   user-select: none; margin-bottom: 2.5rem;
 }

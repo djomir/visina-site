@@ -58,7 +58,7 @@ uv run python -m http.server 8000
 
 ## Deploying
 
-**Live: <https://mirkoviccdjordje-code.github.io/visina-site/>** — GitHub Pages, serving `main` automatically on every push.
+**Live: <https://djomir.github.io/visina-site/>** — GitHub Pages, serving `main` automatically on every push.
 
 ## Contact
 

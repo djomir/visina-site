@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mirkoviccdjordje-code.github.io/visina-site/sitemap.xml
